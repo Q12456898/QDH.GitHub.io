@@ -1,0 +1,571 @@
+/* 基础样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans SC', sans-serif;
+    color: #000;
+    background-color: #f8f8f8;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* 导航栏 */
+.navbar {
+    background-color: #C92933;
+    color: white;
+    padding: 20px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.navbar h1 {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+/* 产品全景图 */
+.product-gallery {
+    margin-bottom: 30px;
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+.gallery-container {
+    position: relative;
+    width: 100vw; /* 使用视口宽度 */
+    margin-left: calc(-50vw + 50%); /* 居中对齐 */
+    margin-right: calc(-50vw + 50%);
+    overflow: hidden;
+    height: 300px;
+    cursor: grab; /* 添加抓取光标样式 */
+}
+
+.gallery-container:active {
+    cursor: grabbing; /* 点击时显示抓取中的光标 */
+}
+
+.gallery-slider {
+    display: flex;
+    transition: transform 0.3s ease;
+    height: 100%;
+    width: 100%;
+}
+
+.gallery-slide {
+    flex: 0 0 100%;
+    position: relative;
+    height: 300px;
+    width: 100vw;
+}
+
+.gallery-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.case-badge {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    background-color: rgba(128, 128, 128, 0.75);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none; /* 移除链接下划线 */
+    cursor: pointer; /* 添加手型光标 */
+    transition: background-color 0.3s ease; /* 添加过渡效果 */
+}
+
+.case-badge:hover {
+    background-color: rgba(128, 128, 128, 0.9); /* 悬停时背景色加深 */
+}
+
+/* 移除左右箭头按钮 */
+.gallery-prev,
+.gallery-next {
+    display: none;
+}
+
+.gallery-prev:hover,
+.gallery-next:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.gallery-prev {
+    left: 20px;
+}
+
+.gallery-next {
+    right: 20px;
+}
+    display: flex; /* 使用 flexbox 来排列图片 */
+    justify-content: space-around; /* 图片之间平均分布空间 */
+    align-items: center; /* 垂直居中对齐 */
+    flex-wrap: wrap; /* 如果空间不足则换行 */
+    gap: 15px; /* 图片之间的间隙 */
+}
+
+.gallery-item {
+    position: relative; /* 为了绝对定位 case-badge */
+    border: 1px solid #ddd;
+    padding: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 4px;
+    width: calc(33.333% - 20px); /* 假设一行三张图片，减去一些间隙 */
+    max-width: 280px; /* 最大宽度，防止图片过大 */
+    box-sizing: border-box; /* padding 和 border 不会增加元素的总宽度 */
+}
+
+.gallery-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 3px;
+}
+
+.case-badge {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;  /* 圆圈的宽度 */
+    height: 100px; /* 圆圈的高度 */
+    background-color: rgba(128, 128, 128, 0.75); /* 灰色半透明背景 */
+    color: white;
+    border-radius: 50%; /* 使其成为圆形 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    pointer-events: none; /* 允许点击穿透到图片（如果需要） */
+    z-index: 10; /* 确保在图片上方 */
+}
+
+.flex: 1;
+    height: 300px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 类目栏 */
+.category-section {
+    margin-bottom: 40px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    padding: 30px;
+}
+
+.category-tabs {
+    display: flex;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #eee;
+}
+
+.tab-btn {
+    background: none;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #999;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s;
+}
+
+.tab-btn.active {
+    color: #C92933;
+    font-weight: 500;
+}
+
+.tab-btn.active::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #C92933;
+}
+
+.tab-content {
+    display: none; /* 默认隐藏所有标签内容 */
+    animation: fadeIn 0.5s; /* 可选的淡入动画 */
+}
+
+.tab-content.active {
+    display: block; /* 显示活动的标签内容 */
+    /* 如果您的产品列表是grid布局，这里可能用 display: grid; 或 display: flex; */
+    /* 根据您的 .product-grid 样式，如果它是 grid 容器，这里用 block 可能不够，
+       您可能需要确保 .tab-content.active 内部的 .product-grid 能够正确展示。
+       通常 .product-grid 自身会有 display: grid; 样式。
+       如果 .tab-content 直接包含 .product-grid, display: block; 应该没问题。
+    */
+}
+
+/* 可选的淡入动画 */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.product-item {
+    border: 1px solid #eee;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    background-color: #fff; /* 背景设为白色 */
+    border-radius: 8px; /* 轻微圆角 */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* 轻微阴影 */
+}
+
+.product-item:hover {
+    transform: translateY(-3px); /* 轻微上浮效果 */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* 悬停时阴影加深 */
+}
+
+.product-item.selected {
+    border-color: #C92933; /* 主题色边框 */
+    box-shadow: 0 0 10px rgba(201, 41, 51, 0.5); /* 主题色光晕 */
+    background-color: #fdf2f2; /* 轻微的主题色背景 */
+}
+
+.product-item.selected-inscription { /* 用于印文类型选择的特殊高亮 */
+    border-color: #007bff; /* 可以选择一个不同的高亮颜色 */
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.4);
+}
+
+.sub-category {
+    margin-bottom: 30px;
+}
+
+.sub-category h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+/* 产品网格 */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.product-item {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    background-color: white;
+}
+
+.product-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.product-item.selected {
+    border: 2px solid #C92933;
+}
+
+.product-image {
+    height: 200px;
+    background-color: #f0f0f0;
+    overflow: hidden;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 15px;
+}
+
+.product-info h3 {
+    font-size: 14px; /* 稍微减小字体大小 */
+    margin-bottom: 5px;
+    font-weight: 500;
+    line-height: 1.2; /* 减小行高 */
+    height: auto; /* 允许自动调整高度 */
+    word-break: break-word; /* 允许在任意字符间换行 */
+    white-space: normal; /* 允许文字换行 */
+    overflow: visible; /* 显示所有内容 */
+    text-overflow: clip; /* 移除省略号 */
+}
+
+.product-info {
+    padding: 12px 10px; /* 稍微调整内边距 */
+    min-height: 60px; /* 确保有足够的空间显示两行文字 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.product-item {
+    min-width: 220px; /* 设置最小宽度确保文字有足够空间显示 */
+}
+.product-item.selected {
+    border: 2px solid #C92933;
+}
+
+.product-image {
+    height: 200px;
+    background-color: #f0f0f0;
+    overflow: hidden;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 15px;
+}
+
+.price {
+    color: #C92933;
+    font-weight: 500;
+}
+
+/* 定制数额栏 */
+.quantity-section {
+    margin-bottom: 30px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    padding: 30px;
+}
+
+.quantity-section h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.quantity-input input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* 价格计算 */
+.price-section {
+    margin-bottom: 30px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    padding: 30px;
+}
+
+.price-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.price-row h2 {
+    font-size: 20px;
+}
+
+.final-price {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.discounted-price {
+    font-size: 24px;
+    font-weight: 700;
+    color: #DAA520; /* 金色 */
+}
+.discount-rules {
+    color: #DAA520; /* 金色 */
+    font-size: 14px; /* 小字体大小 */
+    margin-top: 10px; /* 与上方价格的间距 */
+    line-height: 1.5; /* 行高 */
+    padding: 0 10px; /* 左右内边距 */
+}
+
+/* 发货时间 */
+.shipping-section {
+    margin-bottom: 30px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    padding: 30px;
+}
+
+.shipping-section h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.shipping-info {
+    font-weight: 700;
+}
+
+/* 完成定制按钮 */
+.complete-section {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.complete-btn {
+    background-color: #C92933;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.complete-btn:hover {
+    background-color: #a62129;
+}
+
+/* 选择摘要 */
+.selection-summary {
+    margin-bottom: 40px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    padding: 30px;
+}
+
+.selection-summary h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#selected-items {
+    list-style: none;
+}
+
+#selected-items li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+}
+
+#selected-items li:last-child {
+    border-bottom: none;
+}
+
+/* 发货时间提示文字颜色 */
+.shipping-notice {
+    color: red;
+}
+
+/* Scrolling Banner Section Styles */
+.scrolling-banner-section {
+    background-color: #f8f9fa;
+    padding: 0; /* 完全移除内边距 */
+    margin: 0; /* 移除外边距 */
+    border: none; /* 移除所有边框 */
+}
+
+.scrolling-text-content {
+    font-size: 15px;
+    color: #333;
+    font-family: 'Noto Sans SC', sans-serif;
+    padding: 5px 0; /* 减小文字的上下内边距 */
+    margin: 0; /* 确保没有外边距 */
+}
+
+/* 调整导航栏样式确保紧密连接 */
+.navbar {
+    margin-bottom: 0; /* 确保导航栏底部没有间距 */
+}
+
+/* 滚动按钮样式 */
+.scroll-buttons {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 1000;
+}
+
+.scroll-btn {
+    width: 45px;
+    height: 45px;
+    border-radius: 8px; /* 改为方形圆角 */
+    background-color: rgba(201, 41, 51, 0.9); /* 使用之前的主题红色，略微调整透明度 */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* 添加细微边框 */
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); /* 优雅的过渡效果 */
+    opacity: 0;
+    visibility: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 添加阴影 */
+}
+
+.scroll-btn:hover {
+    background-color: rgba(201, 41, 51, 1);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.scroll-btn.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+#scrollToTop {
+    display: none;
+}
+
+#scrollToBottom {
+    display: none;
+}
