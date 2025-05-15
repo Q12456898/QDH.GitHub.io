@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>读印企业定制选配单</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header class="navbar">
+        <div class="container">
+            <h1>读印企业定制选配单</h1>
+        </div>
+    </header>
+
+    <!-- Scrolling Banner Section -->
+    <section class="scrolling-banner-section">
+        <div class="container">
+            <marquee class="scrolling-text-content" behavior="scroll" direction="left" scrollamount="5">
+                到目前为止，我们（读印）已为全球多个国家、多家世界500强企业及国内外家族、个人用户提供（18万次）专属印章定制服务，是政企商务赠礼与个人文化情感表达的行家优选。
+            </marquee>
+        </div>
+    </section>
+
+    <div class="container">
+        <!-- 产品全景图 -->
+        <section class="product-gallery">
+            <div class="gallery-container">
+                <div class="gallery-slider">
+                    <div class="gallery-slide">
+                        <img src="images/全景大图.jpg" alt="定制案例1">
+                        <a href="https://mp.weixin.qq.com/s/0-uJbfjtnAtuI513IpXLxQ" class="case-badge" target="_blank">定制案例</a>
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="images/product_gallery_2.jpg" alt="定制案例2">
+                        <div class="case-badge">定制案例</div>
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="images/product_gallery_3.jpg" alt="定制案例3">
+                        <div class="case-badge">定制案例</div>
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="images/product_gallery_4.jpg" alt="定制案例4">
+                        <div class="case-badge">定制案例</div>
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="images/product_gallery_5.jpg" alt="定制案例5">
+                        <div class="case-badge">定制案例</div>
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="images/product_gallery_6.jpg" alt="定制案例6">
+                        <div class="case-badge">定制案例</div>
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="images/product_gallery_7.jpg" alt="定制案例7">
+                        <div class="case-badge">定制案例</div>
+                    </div>
+                </div>
+                <!-- 移除这两行 -->
+                <!-- <button class="gallery-prev">&lt;</button> -->
+                <!-- <button class="gallery-next">&gt;</button> -->
+            </div>
+        </section>
+
+        <!-- 类目栏 -->
+        <section class="category-section">
+            <div class="category-tabs">
+                <button class="tab-btn active" data-tab="stone">选印石</button>
+                <button class="tab-btn" data-tab="text">选印文</button>
+                <button class="tab-btn" data-tab="accessories">选配件</button>
+            </div>
+
+            <!-- 选印石 -->
+            <div class="tab-content active" id="stone-content">
+                <div class="product-grid">
+                    <div class="product-item" data-price="60" data-name="赤金石吊坠">
+                        <div class="product-image">
+                            <img src="images/stone_chijinshi.jpg" alt="赤金石吊坠">
+                        </div>
+                        <div class="product-info">
+                            <h3>赤金石吊坠</h3>
+                            <p class="price">60元</p>
+                        </div>
+                    </div>
+                    <div class="product-item" data-price="128" data-name="荔枝冻吊坠">
+                        <div class="product-image">
+                            <img src="images/stone_lizhidong.jpg" alt="荔枝冻吊坠">
+                        </div>
+                        <div class="product-info">
+                            <h3>荔枝冻吊坠</h3>
+                            <p class="price">128元</p>
+                        </div>
+                    </div>
+                    <div class="product-item" data-price="239" data-name="铜印吊坠">
+                        <div class="product-image">
+                            <img src="images/stone_tongyin.jpg" alt="铜印吊坠">
+                        </div>
+                        <div class="product-info">
+                            <h3>铜印吊坠</h3>
+                            <p class="price">239元</p>
+                        </div>
+                    </div>
+                    <div class="product-item" data-price="366" data-name="老挝芙蓉博古纹单章">
+                        <div class="product-image">
+                            <img src="images/stone_laos_furong_boguwen.jpg" alt="老挝芙蓉博古纹单章">
+                        </div>
+                        <div class="product-info">
+                            <h3>老挝芙蓉博古纹单章</h3>
+                            <p class="price">366元</p>
+                        </div>
+                    </div>
+                    <div class="product-item" data-price="466" data-name="老挝芙蓉瑞兽单章">
+                        <div class="product-image">
+                            <img src="images/stone_laos_furong_ruishou.jpg" alt="老挝芙蓉瑞兽单章">
+                        </div>
+                        <div class="product-info">
+                            <h3>老挝芙蓉瑞兽单章</h3>
+                            <p class="price">466元</p>
+                        </div>
+                    </div>
+                    <div class="product-item" data-price="466" data-name="老挝关蓉蒲牢单章">
+                        <div class="product-image">
+                            <img src="images/stone_laos_guanrong_pulao.jpg" alt="老挝关蓉蒲牢单章">
+                        </div>
+                        <div class="product-info">
+                            <h3>老挝关蓉蒲牢单章</h3>
+                            <p class="price">466元</p>
+                        </div>
+                    </div>
+                    <div class="product-item" data-price="566" data-name="老挝麒麟送天书单章">
+                        <div class="product-image">
+                            <img src="images/stone_laos_qilin_tianshu.jpg" alt="老挝麒麟送天书单章">
+                        </div>
+                        <div class="product-info">
+                            <h3>老挝麒麟送天书单章</h3>
+                            <p class="price">566元</p>
+                        </div>
+                    </div>
+                    <div class="product-item" data-price="670" data-name="老挝如意钮单章">
+                        <div class="product-image">
+                            <img src="images/stone_laos_ruyiniu.jpg" alt="老挝如意钮单章">
+                        </div>
+                        <div class="product-info">
+                            <h3>老挝如意钮单章</h3>
+                            <p class="price">670元</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 选印文 -->
+            <div class="tab-content" id="text-content">
+                <div class="sub-category">
+                    <h3>印文类型</h3>
+                    <div class="product-grid">
+                        <div class="product-item" data-price="99" data-name="中文印文" data-type="chinese">
+                            <div class="product-image">
+                                <img src="images/text_type_chinese.jpg" alt="中文印文">
+                            </div>
+                            <div class="product-info">
+                                <h3>中文</h3>
+                                <p class="price">99元</p>
+                            </div>
+                        </div>
+                        <div class="product-item" data-price="69" data-name="英文印文" data-type="english">
+                            <div class="product-image">
+                                <img src="images/text_type_english.jpg" alt="英文印文">
+                            </div>
+                            <div class="product-info">
+                                <h3>英文</h3>
+                                <p class="price">69元</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sub-category">
+                    <h3>印风类型</h3>
+                    <div class="product-grid chinese-style">
+                        <div class="product-item" data-name="汉玉印">
+                            <div class="product-image">
+                                <img src="images/text_style_chinese_hanyuyin.jpg" alt="汉玉印">
+                            </div>
+                            <div class="product-info">
+                                <h3>汉玉印</h3>
+                            </div>
+                        </div>
+                        <div class="product-item" data-name="汉印">
+                            <div class="product-image">
+                                <img src="images/text_style_chinese_hanyin.jpg" alt="汉印">
+                            </div>
+                            <div class="product-info">
+                                <h3>汉印</h3>
+                            </div>
+                        </div>
+                        <div class="product-item" data-name="元朱文">
+                            <div class="product-image">
+                                <img src="images/text_style_chinese_yuanzhuwen.jpg" alt="元朱文">
+                            </div>
+                            <div class="product-info">
+                                <h3>元朱文</h3>
+                            </div>
+                        </div>
+                        <div class="product-item" data-name="秦印">
+                            <div class="product-image">
+                                <img src="images/text_style_chinese_qinyin.jpg" alt="秦印">
+                            </div>
+                            <div class="product-info">
+                                <h3>秦印</h3>
+                            </div>
+                        </div>
+                        <div class="product-item" data-name="四灵印">
+                            <div class="product-image">
+                                <img src="images/text_style_chinese_silingyin.jpg" alt="四灵印">
+                            </div>
+                            <div class="product-info">
+                                <h3>四灵印</h3>
+                            </div>
+                        </div>
+                        <div class="product-item" data-name="双龙戏珠纹饰印">
+                            <div class="product-image">
+                                <img src="images/text_style_chinese_shuanglongxizhu.jpg" alt="双龙戏珠纹饰印">
+                            </div>
+                            <div class="product-info">
+                                <h3>双龙戏珠纹饰印</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-grid english-style" style="display: none;">
+                        <div class="product-item" data-name="飞龙">
+                            <div class="product-image">
+                                <img src="images/text_style_english_feilong.jpg" alt="飞龙">
+                            </div>
+                            <div class="product-info">
+                                <h3>飞龙</h3>
+                            </div>
+                        </div>
+                        <div class="product-item" data-name="祥云">
+                            <div class="product-image">
+                                <img src="images/text_style_english_xiangyun.jpg" alt="祥云">
+                            </div>
+                            <div class="product-info">
+                                <h3>祥云</h3>
+                            </div>
+                        </div>
+                        <div class="product-item" data-name="暗香疏影">
+                            <div class="product-image">
+                                <img src="images/text_style_english_anxiangshuying.jpg" alt="暗香疏影">
+                            </div>
+                            <div class="product-info">
+                                <h3>暗香疏影</h3>
+                            </div>
+                        </div>
+                        <div class="product-item" data-name="茂林修竹">
+                            <div class="product-image">
+                                <img src="images/text_style_english_maolinxiuzhu.jpg" alt="茂林修竹">
+                            </div>
+                            <div class="product-info">
+                                <h3>茂林修竹</h3>
+                            </div>
+                        </div>
+                         <!-- 为其他英文印风添加类似的图片路径 -->
+                        <div class="product-item" data-name="驿寄梅花">
+                            <div class="product-image"><img src="images/text_style_english_yijimeihua.jpg" alt="驿寄梅花"></div>
+                            <div class="product-info"><h3>驿寄梅花</h3></div>
+                        </div>
+                        <div class="product-item" data-name="竹韵">
+                            <div class="product-image"><img src="images/text_style_english_zhuyun.jpg" alt="竹韵"></div>
+                            <div class="product-info"><h3>竹韵</h3></div>
+                        </div>
+                        <div class="product-item" data-name="岁寒三友-松">
+                            <div class="product-image"><img src="images/text_style_english_suihansanyou_song.jpg" alt="岁寒三友-松"></div>
+                            <div class="product-info"><h3>岁寒三友-松</h3></div>
+                        </div>
+                        <div class="product-item" data-name="岁寒三友-竹">
+                            <div class="product-image"><img src="images/text_style_english_suihansanyou_zhu.jpg" alt="岁寒三友-竹"></div>
+                            <div class="product-info"><h3>岁寒三友-竹</h3></div>
+                        </div>
+                        <div class="product-item" data-name="岁寒三友-梅">
+                            <div class="product-image"><img src="images/text_style_english_suihansanyou_mei.jpg" alt="岁寒三友-梅"></div>
+                            <div class="product-info"><h3>岁寒三友-梅</h3></div>
+                        </div>
+                        <div class="product-item" data-name="圣诞徽章">
+                            <div class="product-image"><img src="images/text_style_english_shengdanhuizhang.jpg" alt="圣诞徽章"></div>
+                            <div class="product-info"><h3>圣诞徽章</h3></div>
+                        </div>
+                        <div class="product-item" data-name="圣诞节徽章">
+                            <div class="product-image"><img src="images/text_style_english_shengdanjiehuizhang.jpg" alt="圣诞节徽章"></div>
+                            <div class="product-info"><h3>圣诞节徽章</h3></div>
+                        </div>
+                        <div class="product-item" data-name="熊猫仔仔">
+                            <div class="product-image"><img src="images/text_style_english_xiongmaozaizai.jpg" alt="熊猫仔仔"></div>
+                            <div class="product-info"><h3>熊猫仔仔</h3></div>
+                        </div>
+                        <div class="product-item" data-name="竹宝丫丫">
+                            <div class="product-image"><img src="images/text_style_english_zhubaoyaya.jpg" alt="竹宝丫丫"></div>
+                            <div class="product-info"><h3>竹宝丫丫</h3></div>
+                        </div>
+                        <div class="product-item" data-name="熊趴趴">
+                            <div class="product-image"><img src="images/text_style_english_xiongpapa.jpg" alt="熊趴趴"></div>
+                            <div class="product-info"><h3>熊趴趴</h3></div>
+                        </div>
+                        <div class="product-item" data-name="熊出没">
+                            <div class="product-image"><img src="images/text_style_english_xiongchumo.jpg" alt="熊出没"></div>
+                            <div class="product-info"><h3>熊出没</h3></div>
+                        </div>
+                        <div class="product-item" data-name="呼呼熊">
+                            <div class="product-image"><img src="images/text_style_english_huhuxiong.jpg" alt="呼呼熊"></div>
+                            <div class="product-info"><h3>呼呼熊</h3></div>
+                        </div>
+                        <div class="product-item" data-name="酣睡熊宝">
+                            <div class="product-image"><img src="images/text_style_english_hanshuixiongbao.jpg" alt="酣睡熊宝"></div>
+                            <div class="product-info"><h3>酣睡熊宝</h3></div>
+                        </div>
+                        <div class="product-item" data-name="长亭外">
+                            <div class="product-image"><img src="images/text_style_english_changtingwai.jpg" alt="长亭外"></div>
+                            <div class="product-info"><h3>长亭外</h3></div>
+                        </div>
+                        <div class="product-item" data-name="永乐宫">
+                            <div class="product-image"><img src="images/text_style_english_yonglegong.jpg" alt="永乐宫"></div>
+                            <div class="product-info"><h3>永乐宫</h3></div>
+                        </div>
+                        <div class="product-item" data-name="悟空">
+                            <div class="product-image"><img src="images/text_style_english_wukong.jpg" alt="悟空"></div>
+                            <div class="product-info"><h3>悟空</h3></div>
+                        </div>
+                        <div class="product-item" data-name="瑞兽">
+                            <div class="product-image"><img src="images/text_style_english_ruishou.jpg" alt="瑞兽"></div>
+                            <div class="product-info"><h3>瑞兽</h3></div>
+                        </div>
+                        <div class="product-item" data-name="空谷幽兰">
+                            <div class="product-image"><img src="images/text_style_english_kongguyoulan.jpg" alt="空谷幽兰"></div>
+                            <div class="product-info"><h3>空谷幽兰</h3></div>
+                        </div>
+                        <div class="product-item" data-name="菊仙">
+                            <div class="product-image"><img src="images/text_style_english_juxian.jpg" alt="菊仙"></div>
+                            <div class="product-info"><h3>菊仙</h3></div>
+                        </div>
+                        <div class="product-item" data-name="金蕊">
+                            <div class="product-image"><img src="images/text_style_english_jinrui.jpg" alt="金蕊"></div>
+                            <div class="product-info"><h3>金蕊</h3></div>
+                        </div>
+                        <div class="product-item" data-name="宫阙">
+                            <div class="product-image"><img src="images/text_style_english_gongque.jpg" alt="宫阙"></div>
+                            <div class="product-info"><h3>宫阙</h3></div>
+                        </div>
+                        <div class="product-item" data-name="菡萏">
+                            <div class="product-image"><img src="images/text_style_english_handan.jpg" alt="菡萏"></div>
+                            <div class="product-info"><h3>菡萏</h3></div>
+                        </div>
+                        <div class="product-item" data-name="大雁塔">
+                            <div class="product-image"><img src="images/text_style_english_dayanta.jpg" alt="大雁塔"></div>
+                            <div class="product-info"><h3>大雁塔</h3></div>
+                        </div>
+                        <div class="product-item" data-name="大圣归来">
+                            <div class="product-image"><img src="images/text_style_english_dashengguilai.jpg" alt="大圣归来"></div>
+                            <div class="product-info"><h3>大圣归来</h3></div>
+                        </div>
+                        <div class="product-item" data-name="福灵">
+                            <div class="product-image"><img src="images/text_style_english_fuling.jpg" alt="福灵"></div>
+                            <div class="product-info"><h3>福灵</h3></div>
+                        </div>
+                        <div class="product-item" data-name="云蛇图腾">
+                            <div class="product-image"><img src="images/text_style_english_yunshetuteng.jpg" alt="云蛇图腾"></div>
+                            <div class="product-info"><h3>云蛇图腾</h3></div>
+                        </div>
+                        <div class="product-item" data-name="蝴蝶飞">
+                            <div class="product-image"><img src="images/text_style_english_hudiefei.jpg" alt="蝴蝶飞"></div>
+                            <div class="product-info"><h3>蝴蝶飞</h3></div>
+                        </div>
+                        <div class="product-item" data-name="龙仔">
+                            <div class="product-image"><img src="images/text_style_english_longzai.jpg" alt="龙仔"></div>
+                            <div class="product-info"><h3>龙仔</h3></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sub-category">
+                    <h3>边款设计</h3>
+                    <div class="product-grid">
+                        <div class="product-item" data-price="0" data-name="Logo边款">
+                            <div class="product-image">
+                                <img src="images/side_design_logo.jpg" alt="Logo">
+                            </div>
+                            <div class="product-info">
+                                <h3>Logo</h3>
+                                <p class="price">0元</p>
+                            </div>
+                        </div>
+                        <div class="product-item" data-price="0" data-name="图案边款">
+                            <div class="product-image">
+                                <img src="images/side_design_pattern.jpg" alt="图案">
+                            </div>
+                            <div class="product-info">
+                                <h3>图案</h3>
+                                <p class="price">0元</p>
+                            </div>
+                        </div>
+                        <div class="product-item" data-price="0" data-name="祝福语边款">
+                            <div class="product-image">
+                                <img src="images/side_design_blessing.jpg" alt="祝福语">
+                            </div>
+                            <div class="product-info">
+                                <h3>祝福语</h3>
+                                <p class="price">0元</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 选配件 -->
+            <div class="tab-content" id="accessories-content">
+                <div class="sub-category">
+                    <h3>礼盒礼袋</h3>
+                    <div class="product-grid">
+                        <div class="product-item" data-price="0" data-name="手工麻布盒">
+                            <div class="product-image">
+                                <img src="images/accessory_box_manual_linen.jpg" alt="手工麻布盒">
+                            </div>
+                            <div class="product-info">
+                                <h3>手工麻布盒</h3>
+                                <p class="price">0元</p>
+                            </div>
+                        </div>
+                        <div class="product-item" data-price="39" data-name="红色凤尾盒">
+                            <div class="product-image">
+                                <img src="images/accessory_box_red_phoenix.jpg" alt="红色凤尾盒">
+                            </div>
+                            <div class="product-info">
+                                <h3>红色凤尾盒</h3>
+                                <p class="price">39元</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sub-category">
+                    <h3>印泥</h3>
+                    <div class="product-grid">
+                        <div class="product-item" data-price="25" data-name="双维印泥">
+                            <div class="product-image">
+                                <img src="images/accessory_inkpad_shuangwei.jpg" alt="双维印泥">
+                            </div>
+                            <div class="product-info">
+                                <h3>双维印泥</h3>
+                                <p class="price">25元</p>
+                            </div>
+                        </div>
+                        <div class="product-item" data-price="135" data-name="双维黄镖印泥">
+                            <div class="product-image">
+                                <img src="images/accessory_inkpad_huangbiao.jpg" alt="双维黄镖印泥">
+                            </div>
+                            <div class="product-info">
+                                <h3>双维黄镖印泥</h3>
+                                <p class="price">135元</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sub-category">
+                    <h3>流苏</h3>
+                    <div class="product-grid">
+                        <div class="product-item" data-price="0" data-name="普通流苏">
+                            <div class="product-image">
+                                <img src="images/accessory_tassel_common.jpg" alt="普通流苏">
+                            </div>
+                            <div class="product-info">
+                                <h3>普通流苏</h3>
+                                <p class="price">0元</p>
+                            </div>
+                        </div>
+                        <div class="product-item" data-price="6" data-name="吉祥东方流苏">
+                            <div class="product-image">
+                                <img src="images/accessory_tassel_oriental.jpg" alt="吉祥东方流苏">
+                            </div>
+                            <div class="product-info">
+                                <h3>吉祥东方流苏</h3>
+                                <p class="price">6元</p>
+                            </div>
+                        </div>
+                        <div class="product-item" data-price="6" data-name="唯美古风流苏">
+                            <div class="product-image">
+                                <img src="images/accessory_tassel_ancient.jpg" alt="唯美古风流苏">
+                            </div>
+                            <div class="product-info">
+                                <h3>唯美古风流苏</h3>
+                                <p class="price">6元</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 定制数额栏 -->
+        <section class="quantity-section">
+            <h2>定制数额</h2>
+            <div class="quantity-input">
+                <input type="number" id="quantity" min="1" value="1">
+            </div>
+        </section>
+
+        <!-- 价格计算 -->
+        <section class="price-section">
+            <div class="price-row">
+                <h2>最终价格</h2>
+                <p id="final-price" class="final-price">0元</p>
+            </div>
+            <div class="price-row">
+                <h2>优惠后价格</h2>
+                <p id="discounted-price" class="discounted-price">0元</p>
+            </div>
+            <div class="discount-rules">
+                订单金额满600元-5000元(正价)及以上，可享95折优惠；订单金额满5000元一1W元(正价)及以上，可享92折优惠；订单金额满1W元-5W元(正价)及以上，可享89折优惠；订单金额满5W一10W元(正价)及以上，可享87折优惠；订单金额满10w元(正价)及以上，可享85折优惠
+            </div>
+        </section>
+
+        <!-- 发货时间 -->
+        <section class="shipping-section">
+            <h2>发货时间</h2>
+            <p class="shipping-info">
+                <span class="shipping-notice">
+                    <strong>下单后5-7日内完成发货，具体根据石料和包装有所调整</strong>
+                </span>
+            </p>
+        </section>
+
+        <!-- 完成定制按钮部分 -->
+        <section class="complete-section">
+            <button id="completeButton" class="complete-btn" onclick="generateSelectionImage()">完成定制</button>
+        </section>
+
+        <!-- 选择摘要部分 -->
+        <section class="selection-summary">
+            <h2>已选择产品</h2>
+            <div id="selected-items">
+                <!-- 这里会动态填充选择的产品 -->
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- 在body标签结束前添加以下代码 -->
+<div class="scroll-buttons">
+    <button id="scrollToTop" class="scroll-btn" title="返回顶部">
+        <span>↑</span>
+    </button>
+    <button id="scrollToBottom" class="scroll-btn" title="到达底部">
+        <span>↓</span>
+    </button>
+</div>
